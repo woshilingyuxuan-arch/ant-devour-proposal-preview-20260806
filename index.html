@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#120b04" />
+    <meta name="description" content="吞噬进化独立优化提案版，不覆盖当前游戏。" />
+    <title>吞噬进化 · 优化提案版</title>
+    <style>
+      #boot-loader { position: fixed; inset: 0; z-index: 99; display: grid; place-items: center; background: radial-gradient(circle at 50% 36%, #3c2811 0, #130c06 45%, #030201 100%); color: #fff0b3; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; transition: opacity .35s ease, visibility .35s ease; }
+      #boot-loader.is-ready { opacity: 0; visibility: hidden; pointer-events: none; }
+      .boot-card { width: min(78vw, 330px); text-align: center; }
+      .boot-mark { width: 62px; height: 62px; margin: 0 auto 18px; border: 2px solid #ffd86c; border-radius: 50%; display: grid; place-items: center; color: #ffd86c; font-size: 29px; box-shadow: 0 0 24px #e99e4370; animation: boot-pulse 1.5s ease-in-out infinite alternate; }
+      .boot-title { font-weight: 800; font-size: 25px; letter-spacing: 2px; }
+      .boot-status { min-height: 24px; margin: 9px 0 17px; color: #d8c38f; font-size: 13px; }
+      .boot-track { height: 8px; overflow: hidden; border: 1px solid #d4aa4c; border-radius: 99px; background: #100a04; }
+      .boot-fill { width: 0%; height: 100%; background: linear-gradient(90deg, #9d541f, #ffe387); transition: width .14s linear; }
+      .boot-percent { margin-top: 9px; color: #fff0bd; font-weight: 800; font-size: 13px; }
+      #proposal-badge { position: fixed; z-index: 120; top: max(7px, env(safe-area-inset-top)); right: 8px; padding: 5px 8px; border: 1px solid #ffd36a99; border-radius: 99px; background: #170d06d9; color: #ffe6a0; font: 800 10px/1 "Microsoft YaHei", "PingFang SC", sans-serif; letter-spacing: .5px; pointer-events: none; box-shadow: 0 2px 12px #0009; }
+      @keyframes boot-pulse { from { transform: scale(.93); opacity: .68; } to { transform: scale(1.05); opacity: 1; } }
+    </style>
+    <script type="module" crossorigin src="/assets/proposal-CfC8KHFq.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/proposal-DzkYBUX0.css">
+  </head>
+  <body>
+    <div id="game" data-project="ant-devour-proposal-v1"></div>
+    <aside id="proposal-badge">优化提案版 · 未覆盖原版</aside>
+    <section id="boot-loader" aria-live="polite" aria-label="提案版加载中">
+      <div class="boot-card">
+        <div class="boot-mark">✦</div>
+        <div class="boot-title">正在载入优化提案</div>
+        <div class="boot-status" data-boot-status>正在准备独立预览资源</div>
+        <div class="boot-track"><div class="boot-fill" data-boot-fill></div></div>
+        <div class="boot-percent" data-boot-percent>0%</div>
+      </div>
+    </section>
+  </body>
+</html>
